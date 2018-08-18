@@ -1,0 +1,11 @@
+@function px2rem($px){
+  $rem:130px;
+  @return ($px / $rem)+rem;
+}
+.star_right{
+  float: right;
+  height:px2rem(50px);
+  font-size: px2rem(35px);
+  margin-right:px2rem(80px);
+ margin-top:0.15385rem;;
+}

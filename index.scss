@@ -1,0 +1,78 @@
+@function px2rem($px){
+  $rem:37.5px;
+  @return ($px / $rem)+rem;
+}
+html{
+  font-size:130px;
+}
+*{
+  padding:0;
+  margin:0;
+}
+.header_back{
+  display:none;
+
+}
+.search{
+  height:px2rem(40px);
+  line-height:px2rem(40px);
+  text-align:center;
+  border-bottom:px2rem(1px) solid #e7e7e7;
+  input{
+    margin-top:-40px;
+    border:px2rem(1px) solid #cccccc;
+     border-radius: px2rem(5px);
+     height:px2rem(26px);
+     width:px2rem(162px);
+  }
+  button{
+    
+     border-radius: px2rem(5px);
+   color:#000000;
+    background:none;
+    border:px2rem(1px) solid #cccccc;
+     height:px2rem(26px);
+     line-height:px2rem(26px);
+     font-size:px2rem(12px);
+     padding:0 px2rem(5px);
+
+  }
+}
+h1{
+  height:px2rem(30px);
+  line-height:px2rem(30px);
+  font-size:px2rem(15px);
+  font-weight:400;
+}
+// .content{
+//   padding: 0 px2rem(4px);
+// }
+.item{
+  margin-left:px2rem(5px);
+  float:left;
+  .item_pic{
+    width:px2rem(120px);
+    height:px2rem(150px);
+  }
+  img{
+    width:100%;
+    height:100%;
+  }
+  
+}
+
+.item_content{
+  text-align:center;
+  width:px2rem(120px);
+  height:px2rem(54px);
+}
+.title{
+  width:px2rem(104px);
+  font-size:px2rem(12px);
+  margin-top:px2rem(10px);
+}
+.star{
+  height:px2rem(30px);
+  line-height:px2rem(30px);
+  font-size:px2rem(10px);
+}

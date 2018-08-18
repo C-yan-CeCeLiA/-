@@ -1,0 +1,40 @@
+@function px2rem($px){
+  $rem:37.5px;
+  @return ($px / $rem)+rem;
+}
+html,body,h1,p,div,img{
+  margin:0;
+  padding:0;
+}
+html{
+  font-size:134.5px;
+}
+.main{
+  width:100%;
+  height:px2rem(296px);
+  img{
+    width:100%;
+    height:100%;
+  }
+}
+.d-title{
+   box-sizing:border;
+   border-bottom:px2rem(1px) solid #eeeeee;
+  padding:px2rem(28px) 0 px2rem(10px) 0;
+ h1{
+   font-size:px2rem(20px); 
+  line-height:px2rem(30px);
+ }
+
+}
+.d-content{
+  padding:0 px2rem(4px);
+  p{
+
+  height:px2rem(24px);
+  line-height:px2rem(24px);
+  font-size:px2rem(12px);
+  color:#666666;
+
+  }
+}
